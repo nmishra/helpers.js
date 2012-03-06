@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script type="text/javascript" src="./ext-all-debug.js"></script>
+    <script type="text/javascript" src="./core.js"></script>
+  </head>
+  <body> 
+    <script type="text/javascript">
+/*      var obj1 = {val: 'value'}, obj2 = {val: 'value'};
+      console.log('obj1 === obj2', Ext.ux.util.Object.compareObject(obj1, obj2));*/
+var obj1 = {foo: {clue: 'bar'}}
+   ,obj2 = {foo: {clue:'bar'}}
+   ,equality = Ext.ux.util.Object.compareObject(obj1,obj2);
+console.log(equality);	
+
+    </script>
+  </body>
+</html>
