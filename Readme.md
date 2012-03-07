@@ -21,7 +21,6 @@ console.log(equality);
 ## Coming Soon
 `Ext.aop.Aspect` will provide AOP for extJS libraries. 
 
-The above will weave the code into functions starting with set and get within the Ext.aop namespace.
 
 ## Get Started
 ```shell
