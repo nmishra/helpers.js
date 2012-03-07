@@ -18,6 +18,17 @@ var obj1 = {foo: 'bar'}
 console.log(equality);	
 ```
 
+##Coming Soon
+`Ext.aop.Aspect` will provide AOP for extJS libraries. 
+```javascript
+var aspect = new Ext.aop.Aspect()
+    ,options = {execution:['set*', 'get*'],within: 'Ext.aop.*'}
+    ,pointCut = new Ext.aop.PointCut(options)
+    ,isSuccess = aspect.weave(function() {//code to weave},
+    	       	 new Ext.aop.Advice.after(pointCut))
+```
+The above will weave the code into functions starting with set and get within the Ext.aop namespace.
+
 ## Get Started
 ```shell
 git clone git@github.com:nmishra/helpers.js.git
