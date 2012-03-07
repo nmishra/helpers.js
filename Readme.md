@@ -18,7 +18,7 @@ var obj1 = {foo: 'bar'}
 console.log(equality);	
 ```
 
-##Coming Soon
+## Coming Soon
 `Ext.aop.Aspect` will provide AOP for extJS libraries. 
 ```javascript
 var aspect = new Ext.aop.Aspect()
